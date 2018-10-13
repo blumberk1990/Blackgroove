@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="release-details-pane-border-pane" fx:id="releaseDetailsPane" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mgd.blackgroove.controller.ReleaseDetailsPaneController">
+   <center>
+      <TableView fx:id="trackListTableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <BorderPane.margin>
+            <Insets bottom="2.0" left="20.0" right="20.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <top>
+      <VBox prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView id="album-cover-image-view" fx:id="albumCoverImageView" fitHeight="108.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label id="artist-details-label" fx:id="artistLabel" text="Label">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label id="album-details-label" fx:id="albumLabel" text="Label">
+                           <VBox.margin>
+                              <Insets top="7.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label id="label-details-label" fx:id="labelLabel" text="Label" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label id="year-details-label" fx:id="yearLabel" text="Label">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label id="genre-details-label" fx:id="genreLabel" text="Label">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="styleLabel" text="Label">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets right="1.0" top="7.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="1.0" right="1.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView id="format-icon-image-view" fx:id="formatIconImageView" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label id="format-details-label" fx:id="formatLabel" text="Label">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

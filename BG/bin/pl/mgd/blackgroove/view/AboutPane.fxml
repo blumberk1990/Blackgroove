@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox id="about-blackgroove-vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="about-label" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="30.0" text="Label" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox maxWidth="1.7976931348623157E308">
+         <children>
+            <ImageView id="about-icon-image-viev" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label id="about-icon-label" text="Label" />
+         </children>
+      </HBox>
+      <HBox maxWidth="1.7976931348623157E308" prefWidth="200.0">
+         <children>
+            <Label id="version-label" text="Version: " />
+            <Label id="version-number-label" text="Label" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox maxWidth="1.7976931348623157E308" prefWidth="200.0">
+         <children>
+            <Label id="created-label" text="Label" />
+            <Label id="created-name-label" text="Label" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox maxWidth="1.7976931348623157E308" prefWidth="200.0">
+         <children>
+            <Label id="contact-label" text="Label" />
+            <Label id="contact-details-label" text="Label">
+               <HBox.margin>
+                  <Insets bottom="30.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

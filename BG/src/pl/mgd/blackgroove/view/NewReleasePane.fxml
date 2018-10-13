@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="new-release-window-vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="350.0" styleClass="vbox" stylesheets="@newReleasePaneStyle.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mgd.blackgroove.controller.NewReleasePaneController">
+   <children>
+      <Label id="add-new-release-label" fx:id="newReleaseWindowLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="31.0" prefWidth="311.0" text="Add New Album" textAlignment="CENTER" VBox.vgrow="NEVER">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin></Label>
+      <HBox prefWidth="200.0">
+         <children> 
+            <Label id="artist-label" fx:id="artistLabel" maxWidth="-Infinity" minWidth="150.0" text="Artist*">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" />
+               </HBox.margin></Label>
+            <TextField id="artist-text-field" fx:id="artistTextField">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label id="album-label" fx:id="albumTitleLabel" maxWidth="-Infinity" minWidth="150.0" text="Album*">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" />
+               </HBox.margin></Label>
+            <TextField id="album-text-field" fx:id="albumTitleTextField">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label id="label-label" fx:id="labelLabel" maxWidth="-Infinity" minWidth="150.0" text="Label">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" />
+               </HBox.margin></Label>
+            <TextField id="label-text-field" fx:id="labelTextField">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label id="year-label" fx:id="releaseDataLabel" maxWidth="-Infinity" minWidth="150.0" text="Year">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" />
+               </HBox.margin></Label>
+            <TextField id="year-text-field" fx:id="releaseDataTextField">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label id="size-label" fx:id="sizeLabel" maxWidth="-Infinity" minWidth="150.0" text="Size">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" />
+               </HBox.margin></Label>
+            <ComboBox id="size-combo-box" fx:id="sizeComboBox" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label id="url-link-label" fx:id="digitalVersionLinkLabel" maxWidth="-Infinity" minWidth="150.0" text="URL Link for download">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" />
+               </HBox.margin></Label>
+            <TextField id="url-link-text-field" fx:id="digitalVersionLinkTextField">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+
+      </HBox>
+      <HBox prefWidth="200.0">
+         <children>
+            <Label id="url-pass-label" fx:id="digitalPasswordLabel" maxWidth="-Infinity" minWidth="150.0" text="Password for download">
+               <HBox.margin>
+                  <Insets left="20.0" right="5.0" />
+               </HBox.margin></Label>
+            <TextField id="url-pass-text-field" fx:id="digitalPasswordTextField">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+      </HBox>
+      <Button id="add-release-button" fx:id="addNewReleaseButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" text="Add" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets left="145.0" right="145.0" />
+         </VBox.margin>
+      </Button>
+      <Label id="required-fields-info-label" fx:id="informationLabel" maxHeight="-Infinity" prefHeight="17.0" text="*required fields" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" />
+         </VBox.margin></Label>
+   </children>
+</VBox>

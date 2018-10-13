@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox id="hbox-program-navigation" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mgd.blackgroove.controller.ProgramNavigationPaneController">
+   <children>
+      <Button id="previous-button" fx:id="previouseContentButton" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="30.0" text="Button" HBox.hgrow="NEVER">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Button>
+      <Button id="next-button" fx:id="nextContentButton" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="30.0" text="Button" HBox.hgrow="NEVER">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </Button>
+      <TextField id="search-text-field" fx:id="searchTextField" maxWidth="150.0" minWidth="100.0" promptText="Search" HBox.hgrow="NEVER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+      <HBox id="hbox-program-navigation-region" fx:id="regionHbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="50.0" prefHeight="0.0" styleClass="hbox" HBox.hgrow="ALWAYS" />
+      <Button id="zoom-button" fx:id="minimizeButton" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="25.0" text="Button" HBox.hgrow="NEVER">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Button>
+      <Button id="minimize-button" fx:id="maximizeButton" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="25.0" text="Button" HBox.hgrow="NEVER">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Button>
+      <Button id="close-button" fx:id="closeButton" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="25.0" text="Button" HBox.hgrow="NEVER">
+         <HBox.margin>
+            <Insets right="20.0" />
+         </HBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</HBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.mgd.blackgroove.controller.MainPaneController">
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+		<fx:include fx:id="programNavigationPane" source="ProgramNavigationPane.fxml" />
+         <BorderPane fx:id="contentSwappingBorderPane" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets></BorderPane>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      	<fx:include fx:id="libraryNavigationPane" source="LibraryNavigationPane.fxml" />
+   </left>
+</BorderPane>
